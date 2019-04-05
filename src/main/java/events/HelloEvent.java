@@ -11,12 +11,6 @@ public class HelloEvent extends ListenerAdapter {
 
         //проверяем несколько слов, первое должно быть "Hello"
         String[] messageSent = event.getMessage().getContentRaw().split(" ");
-
-        //Member - MB:Riccio (Серёжа)(U:Riccio (Серёжа)(тут_User_ID) / G:PKKA(тут_ID_канала))
-        //User - U:Riccio (Серёжа)(тут_User_ID)
-        //Name - никнейм
-
-        //имя автора события
         String name = event.getMember().getUser().getName();
 
         if (messageSent[0].equalsIgnoreCase("hello")) {
