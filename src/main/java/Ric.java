@@ -1,5 +1,6 @@
 import events.CategoryCreate;
 import events.HelloEvent;
+import events.UserLevelUp;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 
@@ -13,5 +14,7 @@ public class Ric {
         jda.addEventListener(new HelloEvent());
 
         jda.addEventListener(new CategoryCreate());
+
+        jda.addEventListener(new UserLevelUp());
     }
 }

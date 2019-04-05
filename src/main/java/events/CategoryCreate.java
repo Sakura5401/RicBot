@@ -5,7 +5,7 @@ import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 public class CategoryCreate extends ListenerAdapter {
 
-    public void onCategoryCreate(CategoryCreateEvent e) {
-        e.getGuild().getDefaultChannel().sendMessage("Somebody created an category!").queue();
+    public void onCategoryCreate(CategoryCreateEvent event) {
+        event.getGuild().getDefaultChannel().sendMessage("Somebody created an category!").queue();
     }
 }
